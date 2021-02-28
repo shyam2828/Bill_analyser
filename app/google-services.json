@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "305788696862",
+    "firebase_url": "https://design-f39fc.firebaseio.com",
+    "project_id": "design-f39fc",
+    "storage_bucket": "design-f39fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305788696862:android:2f46e1b02f45b62932f10f",
+        "android_client_info": {
+          "package_name": "com.example.design"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305788696862-g4dc19pr5ab0vmgt80qkspulo4mja1sa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRwRN8ZHXEMVw-xhlkpMG_b9D7GRRu9_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305788696862-g4dc19pr5ab0vmgt80qkspulo4mja1sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

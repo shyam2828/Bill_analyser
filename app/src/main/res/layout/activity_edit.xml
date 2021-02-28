@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="Edit Your profile"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="67dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/ic_delete"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_company_name_1"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your CompanyName"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_email"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edit_company_name_1"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your Email"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_phone"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edit_email"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your phone number"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_profession"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edit_phone"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your profession"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_country"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/edit_profession"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your country"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_marginTop="30dp"
+        android:id="@+id/update"
+        android:layout_below="@+id/edit_country"
+        android:layout_marginLeft="270dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>

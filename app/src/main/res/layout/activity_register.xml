@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_launcher_background"
+        android:layout_marginLeft="10dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FF9800"
+        android:text="Username" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your Username"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FF9800"
+        android:text="Email" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_marginLeft="10dp"
+        android:background="#FF9800"
+        android:layout_below="@+id/textView1"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your Email"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FF9800"
+        android:text="Password" />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:background="#FF9800"
+        android:layout_below="@+id/textView2"
+        android:layout_marginRight="10dp"
+        android:maxLines="1"
+        app:met_floatingLabel="normal"
+        android:hint="Enter your Password"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/spinner"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="112dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/spinner1"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinner2"
+        android:layout_marginTop="20dp"
+        android:background="#FF9800"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="10dp"
+        android:text="Continue" />
+
+</RelativeLayout>

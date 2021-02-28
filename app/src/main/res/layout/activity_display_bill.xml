@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayBillActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/profile_image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:layout_marginLeft="25sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginStart="25dp"/>
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="88dp"
+        android:layout_below="@+id/bar"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="89dp"
+            android:layout_height="83dp"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="306dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:gravity="center"
+            android:text="Billing Desk payment"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:gravity="center"
+            android:text="No:20/202 kambar nagar 5th street kolathur chennai-600099" />
+
+        <TextView
+            android:id="@+id/address_email"
+            android:layout_width="306dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/address"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:gravity="center"
+            android:text="baddogs81@gmail.com" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/review_content"
+        android:layout_below="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/table"
+            android:weightSum="4">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="PRODUCT"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="QUANTITY"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="RS/KG"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="RATE"/>
+        </TableRow>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fill_items"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/table"
+            android:layout_height="300dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/fill_items"
+            android:id="@+id/view_total"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="TOTAL"/>
+            <TextView
+                android:id="@+id/get_total"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text=""/>
+
+        </TableRow>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/review_content"
+        android:weightSum="3"
+        android:padding="10dp"
+        android:layout_marginTop="-60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/action1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="action2"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/action2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="STORE"
+            android:textSize="18sp"/>
+        <Button
+            android:id="@+id/sending"
+            android:layout_width="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="SEND"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</RelativeLayout>
